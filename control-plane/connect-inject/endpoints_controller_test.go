@@ -879,9 +879,10 @@ func TestReconcileCreateEndpoint(t *testing.T) {
 						LocalServicePort:       1234,
 						Upstreams: []api.Upstream{
 							{
-								DestinationType: api.UpstreamDestTypeService,
-								DestinationName: "upstream1",
-								LocalBindPort:   1234,
+								DestinationType:      api.UpstreamDestTypeService,
+								DestinationName:      "upstream1",
+								DestinationNamespace: "default",
+								LocalBindPort:        1234,
 							},
 						},
 						Config: map[string]interface{}{
