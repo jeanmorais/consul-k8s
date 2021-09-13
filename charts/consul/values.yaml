@@ -852,7 +852,7 @@ client:
   # --set 'client.extraConfig="{"log_level": "DEBUG"}"'
   # ```
   extraConfig: |
-    {}
+    {"use_streaming_backend": false}
 
   # A list of extra volumes to mount for client agents. This
   # is useful for bringing in extra data that can be referenced by other configurations
